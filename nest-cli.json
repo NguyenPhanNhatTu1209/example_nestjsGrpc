@@ -1,11 +1,11 @@
 {
   "collection": "@nestjs/schematics",
-  "sourceRoot": "apps/final-project/src",
+  "sourceRoot": "apps/client/src",
   "monorepo": true,
-  "root": "apps/final-project",
+  "root": "apps/client",
   "compilerOptions": {
     "webpack": true,
-    "tsConfigPath": "apps/final-project/tsconfig.app.json"
+    "tsConfigPath": "apps/nestjs_microservice/tsconfig.app.json"
   },
   "projects": {
     "client": {
