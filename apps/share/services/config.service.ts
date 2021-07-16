@@ -42,6 +42,12 @@ export class ConfigService {
     };
   }
 
+  get mongoConfig():any{
+    return {
+      
+    }
+  }
+
   get winstonConfig(): winston.LoggerOptions {
     return {
       transports: [
