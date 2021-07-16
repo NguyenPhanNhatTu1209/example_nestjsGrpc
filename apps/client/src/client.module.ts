@@ -4,5 +4,6 @@ import { TerminusModule } from '@nestjs/terminus';
 
 @Module({
   imports: [SharedModule, TerminusModule],
+  controllers: [],
 })
 export class ClientModule {}
