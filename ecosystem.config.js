@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'client',
-      script: 'dist/apps/client/main.js',
+      script: 'nest start client --watch',
       // watch: true,
       // watch_delay: 1000,
       ignore_watch: ['node_modules', 'logs'],
@@ -11,7 +11,7 @@ module.exports = {
     },
     {
       name: 'authentication',
-      script: 'dist/apps/authentication/main.js',
+      script: 'nest start authentication --watch',
       // watch: true,
       // watch_delay: 1000,
       ignore_watch: ['node_modules', 'logs'],
