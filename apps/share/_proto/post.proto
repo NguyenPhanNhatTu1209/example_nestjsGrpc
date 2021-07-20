@@ -1,3 +1,27 @@
 syntax = "proto3";
 
 package post;
+
+
+// message query{}
+
+message post{
+  string _id=1;
+  string authorPost = 2;
+  string type=3;
+  bool isDelete=4;
+}
+message createPost{
+  string authorPost = 1;
+  string type=2;
+  bool isDelete=3;
+}
+// message id{
+//   string id = 1;
+// }
+service PostsService {
+  // rpc todos (query) returns (todos) {}
+  // rpc example (query) returns (resex) {}
+  rpc createPost (createPost) returns(post){}
+  // rpc getTodoById (id) returns(todo){}
+}

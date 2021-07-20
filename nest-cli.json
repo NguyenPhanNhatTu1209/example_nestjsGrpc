@@ -34,6 +34,33 @@
       "compilerOptions": {
         "tsConfigPath": "apps/post/tsconfig.app.json"
       }
+    },
+    "user": {
+      "type": "application",
+      "root": "apps/user",
+      "entryFile": "main",
+      "sourceRoot": "apps/user/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/user/tsconfig.app.json"
+      }
+    },
+    "post-app": {
+      "type": "application",
+      "root": "apps/post-app",
+      "entryFile": "main",
+      "sourceRoot": "apps/post-app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/post-app/tsconfig.app.json"
+      }
+    },
+    "user-app": {
+      "type": "application",
+      "root": "apps/user-app",
+      "entryFile": "main",
+      "sourceRoot": "apps/user-app/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/user-app/tsconfig.app.json"
+      }
     }
   }
 }

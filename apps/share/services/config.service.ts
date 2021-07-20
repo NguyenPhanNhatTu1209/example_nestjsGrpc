@@ -42,10 +42,8 @@ export class ConfigService {
     };
   }
 
-  get mongoConfig():any{
-    return {
-      
-    }
+  get mongoConfig(): any {
+    return {};
   }
 
   get winstonConfig(): winston.LoggerOptions {

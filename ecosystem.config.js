@@ -1,31 +1,20 @@
+/* eslint-disable prettier/prettier */
 module.exports = {
   apps: [
     {
       name: 'client',
-      script: 'nest start client --watch',
-      // watch: true,
-      // watch_delay: 1000,
+      script: 'dist/apps/client/main.js',
       ignore_watch: ['node_modules', 'logs'],
-      // out_file: './logs/client/out.log',
-      // log_file: './logs//client/combined.log',
     },
     {
-      name: 'authentication',
-      script: 'nest start authentication --watch',
-      // watch: true,
-      // watch_delay: 1000,
+      name: 'post-app',
+      script: 'dist/apps/post-app/main.js',
       ignore_watch: ['node_modules', 'logs'],
-      // out_file: './logs/authentication/out.log',
-      // log_file: './logs/authentication/combined.log',
     },
     {
-      name: 'post',
-      script: 'dist/apps/post/main.js',
-      // watch: true,
-      // watch_delay: 1000,
+      name: 'user-app',
+      script: 'dist/apps/user-app/main.js',
       ignore_watch: ['node_modules', 'logs'],
-      // out_file: './logs/authentication/out.log',
-      // log_file: './logs/authentication/combined.log',
     },
   ],
 };
